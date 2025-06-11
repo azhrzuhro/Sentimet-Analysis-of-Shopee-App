@@ -3,8 +3,8 @@ import joblib
 
 # Load model dan TF-IDF Vectorizer
 try:
-    model = joblib.load("best_logistic_model.pkl")
-    tfidf = joblib.load("tfidf.pkl")
+    model = joblib.load("training/best_logistic_model.pkl")
+    tfidf = joblib.load("training/tfidf.pkl")
 except FileNotFoundError as e:
     st.error(f"❌ File model atau vectorizer tidak ditemukan: {e}")
     st.stop()
