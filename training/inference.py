@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 
 # Load model dan TF-IDF Vectorizer
-model = joblib.load("/training/best_logistic_model.pkl")
-tfidf = joblib.load("/training/tfidf.pkl")
+model = joblib.load("/best_logistic_model.pkl")
+tfidf = joblib.load("/tfidf.pkl")
 
 # Label Sentimen
 labels = ["NEGATIF", "NETRAL", "POSITIF"]
